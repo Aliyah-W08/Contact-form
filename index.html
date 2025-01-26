@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <form id="form">
+        <div id="container">
+            <h2>Contact us</h2>
+
+            <div class="name">
+                <label for="firstName">First Name *</label><br>
+                <label for="lastName">Last Name *</label> <br>
+
+            </div>
+
+            <div class="name">
+                <input type="text" id="fistName" name="fistName" class="input" required> <br>
+                <input type="text" id="lastName" name="lastName" class="input" required> <br>
+            </div>
+
+            <label for="email">Email Address *</label><br>
+            <input type="email" id="email" name="email" class="input" required> <br>
+
+            <div id="queryDiv">
+                <label for="QueryType">Query Type *</label> <br>
+
+                <input type="radio" id="General" name="QueryType" required>
+                <label for="General">General Enquiery</label>
+
+                <input type="radio" id="Support" name="QueryType">
+                <label for="Support">Support Request</label> <br>
+                <!-- Same name for the radio buttons and one required makes the required field for the radio buttons-->
+            </div>
+
+
+            <label for="message">Message</label><br>
+            <input type="text" id="message" name="message" class="input" required> <br>
+
+            <input type="checkbox" id="consent" name="consent" class="consent" required>
+            <label for="consent">I consent to being contacted by the team *</label> <br>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
